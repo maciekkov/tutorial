@@ -1,0 +1,43 @@
+AllowShortIfStatementsOnASingleLine : false
+AllowShortBlocksOnASingleLine : false
+AllowShortFunctionsOnASingleLine : Empty
+AlignConsecutiveAssignments : true
+AlwaysBreakTemplateDeclarations : true
+BreakConstructorInitializersBeforeComma : true
+ColumnLimit : 120
+Standard : C++11
+BreakBeforeBraces : Custom
+BraceWrapping :
+    AfterClass : true
+    AfterControlStatement : true
+    AfterEnum : true
+    AfterFunction : true
+    AfterNamespace : false
+    AfterStruct : true
+    AfterUnion : true
+    BeforeCatch : true
+    BeforeElse : true
+    IndentBraces : false
+IndentWidth : 4
+AlignAfterOpenBracket : Align
+AlignConsecutiveDeclarations : true
+AccessModifierOffset : -4
+IndentCaseLabels : false
+PointerAlignment : Left
+IncludeCategories:
+  - Regex:
+    '\<cstdlib\>|\<csignal\>|\<csetjmp\>|\<cstdarg\>|\<typeinfo\>|\<typeindex\>|\<type_traits\>|\<bitset\>|\<functional\>|\<utility\>|\<ctime\>|\<chrono\>|\<cstddef\>|\<initializer_list\>|\<tuple\>|\<any\>|\<optional\>|\<new\>|\<memory\>|\<scoped_allocator\>|\<memory_resource\>|\<climits\>|\<cfloat\>|\<cstdint\>|\<cinttypes\>|\<limits\>|\<exception\>|\<exception_list\>|\<stdexcept\>|\<cassert\>|\<system_error\>|\<cerrno\>|\<cctype\>|\<cwctype\>|\<cstring\>|\<cwchar\>|\<cuchar\>|\<string\>|\<string_view\>|\<array\>|\<vector\>|\<deque\>|\<list\>|\<forward_list\>|\<set\>|\<map\>|\<unordered_set\>|\<unordered_map\>|\<stack\>|\<queue\>|\<algorithm\>|\<execution_policy\>|\<iterator\>|\<cmath\>|\<complex\>|\<valarray\>|\<random\>|\<numeric\>|\<ratio\>|\<cfenv\>|\<iosfwd\>|\<ios\>|\<istream\>|\<ostream\>|\<iostream\>|\<fstream\>|\<sstream\>|\<strstream\>|\<iomanip\>|\<streambuf\>|\<cstdio\>|\<locale\>|\<clocale\>|\<codecvt\>|\<regex\>|\<atomic\>|\<thread\>|\<mutex\>|\<shared_mutex\>|\<future\>|\<condition_variable\>|\<filesystem\>|\<ciso646\>|\<ccomplex\>|\<ctgmath\>|\<cstdalign\>|\<cstdbool\>'
+    Priority:        1
+  - Regex:           '\<sys\/|\<unistd.h\>|\<fcntl.h>|\<poll.h\>|\<errno.h\>|\<semaphore.h\>|\<ifaddrs.h\>|\<linux\/|\<net\/|\<netdb.h\>|\<arpa\/'
+    Priority:        2
+  - Regex:           'connectivity_kmod_interface'
+    Priority:        3
+  - Regex:           'connip\/register'
+    Priority:        4
+  - Regex:           'connip\/basic|'
+    Priority:        5
+  - Regex:           'connip\/*|pss\/*'
+    Priority:        6
+  - Regex:           '\<gmock|\<gtest|\<log|\<mf\/|\<common\/|\<hlapi|\<cereal|\<sf|\<syscon|\<ccs|\<coma|\<common|\<cpri|\<event_collector|\<tempest'
+    Priority:        7
+

@@ -1,0 +1,5 @@
+cmake/common.cmake
+haxer/moneyManagement/MoneyManager.cpp
+haxer/moneyManagement/MoneyManager.hpp
+utest/CMakeLists.txt
+CMakeLists.txt
